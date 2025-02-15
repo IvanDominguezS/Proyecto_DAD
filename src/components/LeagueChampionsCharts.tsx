@@ -1,4 +1,3 @@
-import React from 'react';
 import { Pie, Doughnut, Radar, Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, plugins, Title, RadialLinearScale, PointElement, LineElement, BarElement, CategoryScale, LinearScale } from 'chart.js';
 import { dificultadToString } from '../pages/Pagina_Informes';

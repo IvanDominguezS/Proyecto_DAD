@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const Pagina_Home = () => {
   return (
     <div className="container mt-5">
