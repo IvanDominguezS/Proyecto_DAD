@@ -1,0 +1,149 @@
+/* CONTAINER. */
+.container.search-container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px 8px black;
+}
+
+/* SEARCH BOX. */
+.ais-SearchBox-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.ais-SearchBox-submit {
+    display: none;
+}
+
+.ais-SearchBox-reset {
+    display: none;
+}
+
+/* POPUP. */
+.popup-container {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 8px 8px 8px 8px black;
+    max-width: 400px;
+    width: 100%;
+    z-index: 9999;
+}
+
+.popup-title {
+    font-size: 1.25rem; /* Lo hacemos un poco más pequeño. */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.popup-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* RESULTADOS. */
+.hit-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.hit-item p {
+    margin: 0;
+}
+
+.hit-item .price {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* PAGINACIÓN. */
+.ais-Pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.ais-Pagination-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.ais-Pagination-item {
+    display: inline;
+}
+
+.ais-Pagination-link {
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.ais-Pagination-link:hover {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Una pequeña animación. */
+    background-color: #f1f1f1;
+}
+
+.ais-Pagination-item--selected .ais-Pagination-link {
+    background-color: #b6b4b4;
+}
+
+html[data-bs-theme = "dark"] { /* Colocamos estilos cuando está en modo oscuro. */
+
+    /* CONTAINER. */
+    .container.search-container {
+        background-color: black;
+        box-shadow: 0px 8px 8px 8px white;
+    }
+
+    /* RESULTADOS. */
+    .hit-item {
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: #000000;
+        margin-bottom: 10px;
+    }
+
+    .ais-Pagination-link:hover {
+        transition: background-color 0.3s ease, color 0.3s ease; /* Una pequeña animación. */
+        background-color: #181818;
+    }
+
+    .ais-Pagination-item--selected .ais-Pagination-link { /*Lo coloco de nuevo para que la animación no le afecte. */
+        background-color: #b6b4b4;
+    }
+
+
+    /* POPUP. */
+    .popup-container {
+        background-color: black;
+        box-shadow: 8px 8px 8px 8px black;
+    }
+    
+    .popup-title {
+        font-size: 1.25rem; /* Lo hacemos un poco más pequeño. */
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: #666;
+    }
+    
+    .popup-description {
+        font-size: 1rem;
+        color: #999;
+        line-height: 1.5;
+    }
+    
+}

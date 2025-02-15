@@ -1,0 +1,37 @@
+#transcript-section {
+    margin: auto;
+
+    width: 50%;
+    max-height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+#transcript-section .text-muted {
+    font-style: italic;
+}
+
+#button-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* VOZ_2. */
+#input-voz {
+    width: 50%;
+    margin: auto;
+}
+
+#boton_reinicio {
+    width: 30%;
+    margin: auto;
+}
+
+#boton_reinicio button {
+    width: 100%;
+}

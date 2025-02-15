@@ -1,0 +1,101 @@
+/* SOLO PARA LA PÁGINA DE ELEMENTOS RESPONSIVE. */
+#buttons {
+    width: 100%;
+}
+
+#buttons button {
+    width: 100%;
+}
+
+#responsive-elements {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.responsive-element {
+    padding: 15px;
+    margin: 10px;
+    flex: calc(33% - 20px); /* Hacemos calc para que tome en cuenta el margin (unos 20px). */
+
+    box-shadow: 0px 6px 8px black;
+    border: 1px solid black;
+    border-radius: 8px;
+    animation: fadeIn 0.75s forwards;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* FORMATO DEL CONTADOR. */
+#contador p {
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* FORMATO DE LA LISTA DE TAREAS. */
+#lista-tareas #campo-tareas { /* CAMPO DE TEXTO DE LAS TAREAS. */
+    margin-bottom: 15px;
+}
+
+#lista-tareas .list-group-item { /* CLASE DE BOOTSTRAP DE LISTA. */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lista-tareas .list-group-item button {
+    margin-left: 10px;
+}
+
+/* FORMATO DEL CUESTIONARIO. */
+#trivia .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#trivia .options .btn {
+    text-align: justify;
+}
+
+#trivia .options .btn:hover {
+    margin-left: 10px; /* Se hace un poco más pequeño al pasar el ratón. */
+    background-color: rgb(245, 245, 245);
+    transition: all 0.3s ease-in-out;
+}
+
+#trivia .options .btn.selected {
+    background-color: rgb(190, 190, 190);
+}
+
+#trivia .result {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+/* ANIMACIÓN DE ENTRADA DE LOS COMPONENTES. */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .responsive-element {
+        flex: 100%;
+    }
+
+}
