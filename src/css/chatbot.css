@@ -1,0 +1,84 @@
+#chatbot-not-expanded { /* CÓDIGO NO EXPANDIDO. */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 8px black;
+    max-width: 250px;
+    cursor: pointer; /* HACE QUE SE PUEDA HACER CLIC EN TODO EL COMPONENTE. */
+}
+
+#avatar {
+    margin: auto;
+    margin-bottom: 15px;
+    width: 80px;
+    height: 80px;
+    
+    border-radius: 50%;
+    border: 2px solid white;
+    background-image: url('src/assets/img/GUIIA.jpg');
+    background-size: cover;
+}
+
+.cs-main-container { /* CÓDIGO EXPANDIDO. */
+    position: fixed !important;
+    height: 50% !important;
+    bottom: 20px;
+    right: 20px;
+    max-width: 350px;
+    border-radius: 15px;
+}
+
+html[data-bs-theme = "dark"] { /* Colocamos estilos cuando está en modo oscuro. */
+
+    #chatbot-not-expanded {
+        background-color: #181818;
+    }
+
+    .cs-conversation-header {
+        background-color: #181818;
+    }
+
+    .cs-conversation-header svg {
+        color: white;
+    }
+
+    .cs-conversation-header__user-name {
+        color: white !important;
+        background-color: #181818;
+    }
+
+    .cs-message-list {
+        background-color: #181818;
+    }
+
+    .cs-message--incoming .cs-message__content {
+        background-color: #1a6ba8;
+        color: white;
+    }
+
+    .cs-message--outgoing .cs-message__content {
+        background-color: #064372;
+        color: white;
+    }
+
+    .cs-message-input {
+        background-color: #181818;
+    }
+
+    .cs-message-input__content-editor-wrapper {
+        background-color: #1a6ba8;
+    }
+
+    .cs-message-input__content-editor {
+        background-color: #1a6ba8;
+        color: white;
+    }
+
+    .cs-message-input__content-editor:empty::before { /* PERMITE CAMBIAR EL COLOR DEL PLACEHOLDER. */
+        color: rgb(170, 170, 170);
+    }
+
+}

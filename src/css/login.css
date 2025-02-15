@@ -1,0 +1,33 @@
+#login-form {
+    background-color: #fff;
+    padding: 0px 30px 30px 30px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px 8px black;
+    width: 100%;
+}
+
+fieldset {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 0px 25px 25px 25px; /* Quitamos el espaciado superior para ponerlo como margen. */
+    margin-top: 25px;
+}
+
+legend {
+    padding: 15px;
+    float: none;
+    width: auto;
+}
+
+html[data-bs-theme = "dark"] { /* Colocamos estilos cuando está en modo oscuro. */
+
+    #login-form {
+        background-color: black;
+        box-shadow: 0px 8px 8px 8px white;
+    }
+
+    fieldset {
+        border: 2px solid white;
+    } 
+
+}
