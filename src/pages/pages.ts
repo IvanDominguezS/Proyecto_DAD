@@ -3,7 +3,6 @@
 export * from './Pagina_Responsive/Pagina_Responsive';
 export * from './Pagina_Carrito'
 export * from './Pagina_Home'
-export * from './Pagina_Juegos'
 export * from './Pagina_Libros'
 export * from './Pagina_Login'
 export * from './Pagina_User'

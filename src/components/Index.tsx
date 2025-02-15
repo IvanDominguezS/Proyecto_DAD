@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router';
 import { NavBar } from './NavBar';
-import { Pagina_Juegos, Pagina_Carrito, Pagina_Home, Pagina_Libros, Pagina_Login, Pagina_User, Pagina_Responsive, Pagina_Voz, Pagina_Informes } from '../pages/pages'; //Conexión al archivo barril.
+import { Pagina_Carrito, Pagina_Home, Pagina_Libros, Pagina_Login, Pagina_User, Pagina_Responsive, Pagina_Voz, Pagina_Informes } from '../pages/pages'; //Conexión al archivo barril.
 import { Chatbot } from './ChatBot/Chatbot';
 
 import '../css/main.css';
@@ -18,7 +18,6 @@ export const Index = () => {
                   
                 <Routes>
                     <Route path='/' element={<Pagina_Home />} />
-                    <Route path='/juegos' element={<Pagina_Juegos />} />
                     <Route path='/libros' element={<Pagina_Libros />} />
                     <Route path='/carrito' element={<Pagina_Carrito />} />
                     <Route path='/login' element={<Pagina_Login />} />

@@ -37,10 +37,6 @@ export const NavBar = () => {
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/">Inicio</NavLink>
                         </li>
-
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/juegos">Juegos</NavLink>
-                        </li>
                         
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/libros">Libros</NavLink>
