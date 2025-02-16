@@ -14,6 +14,8 @@ import { initialMessage } from './ChatBotConst';
 import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import "../../css/chatbot.css";
 
+import guiiaImage from "../../assets/img/GUIIA.jpg";
+
 export const Chatbot = () => {
     const [userInput, setUserInput] = useState('');
     const [isOpen, setIsOpen] = useState(false);
@@ -90,7 +92,7 @@ export const Chatbot = () => {
                     <ConversationHeader.Back onClick={toggleOpen} />
                     <Avatar
                         name="GUIIA"
-                        src="src/assets/img/GUIIA.jpg"
+                        src={guiiaImage}
                     />
                     <ConversationHeader.Content
                         userName="GUIIA"

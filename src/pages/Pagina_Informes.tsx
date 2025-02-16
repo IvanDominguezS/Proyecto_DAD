@@ -4,6 +4,8 @@ import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import { LeagueChampionsCharts } from '../components/LeagueChampionsCharts';
 
+import championsFile from "../assets/data/200125_LoL_champion_data.csv";
+
 export function dificultadToString(dificultad: string): string {
 
     switch (Number(dificultad)) {
@@ -23,7 +25,7 @@ export const Pagina_Informes = () => {
 
     // Fetch al archivo CSV.
     useEffect(() => {
-        fetch('./src/assets/data/200125_LoL_champion_data.csv')
+        fetch(championsFile)
             .then((response) => response.text()) // Obtiene el CSV como texto.
             .then((csvText) => {
 
