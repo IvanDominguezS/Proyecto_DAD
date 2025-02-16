@@ -77,7 +77,7 @@ export const CartItem_BookCard = ({ book }: { book: Book }) => {
         <div className="card mt-3 d-flex flex-row">
             {
                 isImage && (
-                    <div className="w-100 m-3 align-self-center">
+                    <div className="m-3 align-self-center">
                         <img src={imageUrl} alt={book.title} className="img-fluid" />
                     </div>
                 )

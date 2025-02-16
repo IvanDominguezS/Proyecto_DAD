@@ -63,20 +63,6 @@ export const NavBar = () => {
                         <li className="nav-item ps-2">
                             <SearchBar/>
                         </li>
-
-                        <li className="nav-item dropdown">
-                            <button className="nav-link dropdown-toggle btn btn-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </button>
-
-                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li className="dropdown-item"><NavLink className="" to="#">Action</NavLink></li>
-                                <li className="dropdown-item"><NavLink className="" to="#">Another action</NavLink></li>
-                                <li><hr className="dropdown-divider"/></li>
-                                <li className="dropdown-item"><NavLink className="dropdown-item" to="#">Something else here</NavLink></li>
-                            </ul>
-                        </li>
-
                     </ul>
 
 
