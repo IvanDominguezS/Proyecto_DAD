@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import { useDarkMode } from "../context/DarkModeContext";
 import { SearchBar } from "./SearchBar/SearchBar";
 
+import logo from '../assets/img/dad-logo.gif';
+
 export const NavBar = () => {
 
     const {isDarkMode, setIsDarkMode} = useDarkMode();
@@ -25,7 +27,7 @@ export const NavBar = () => {
         <header>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <NavLink className="navbar-brand" to="#">
-                    <img className="w-75 ms-3" src="src\assets\img\dad-logo.gif" alt="Logo de DAD (séptimo círculo del Infierno)"/>
+                    <img className="w-75 ms-3" src={logo} alt="Logo de DAD (séptimo círculo del Infierno)"/>
                 </NavLink>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
