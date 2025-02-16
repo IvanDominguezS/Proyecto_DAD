@@ -15,11 +15,12 @@
     margin-bottom: 15px;
     width: 80px;
     height: 80px;
-    
+}
+
+#avatar img {
+    width: 100%;
     border-radius: 50%;
-    border: 2px solid white;
-    background-image: url('src/assets/img/GUIIA.jpg');
-    background-size: cover;
+    border: 2px solid rgb(160, 160, 160);
 }
 
 .cs-main-container { /* CÓDIGO EXPANDIDO. */

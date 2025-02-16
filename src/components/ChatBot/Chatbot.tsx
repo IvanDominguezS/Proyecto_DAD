@@ -78,7 +78,9 @@ export const Chatbot = () => {
     if (!isOpen) {
         return (
             <div id="chatbot-not-expanded" onClick={toggleOpen}>
-                <section id="avatar" />
+                <section id="avatar">
+                    <img src={guiiaImage} alt="GUIIA" />
+                </section>
                 <p>¡Hola! 👋 Soy la asistente virtual del hotel. ¿Cómo puedo ayudarte hoy?</p>
             </div>
         )
