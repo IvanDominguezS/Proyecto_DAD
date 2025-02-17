@@ -6,11 +6,11 @@ Este es mi proyecto de ReactJS de DAD.
 
 1. Clona el repositorio en tu máquina local:
    ```bash
-   git clone <url-del-repositorio>
+   git clone https://github.com/IvanDominguezS/Proyecto_DAD
 
 2. Navega al directorio del proyecto:
    ```bash
-   cd nombre-del-proyecto
+   cd Proyecto_DAD
 
 3. Instala las dependencias:
    ```bash
